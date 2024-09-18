@@ -1,17 +1,16 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request,Query
 import json
 
 app = FastAPI()
 
-@app.get("/companyDetails")
-async def companyDetails(request: Request):
-    f = open('dataBlocks-sample (4).json')
-    return json.load(f)
-
-@app.get("/esgDetails")
-async def esg(request: Request):
-    f = open('esginsight_L3_v1.json')
-    return json.load(f)
+@app.get("/v1/data/duns/{dunsNumber}")
+async def companyDetails(dunsNumber:str, blockIDs:str = Query(None)):
+    if(blockIDs.find("esg")!=-1):
+        f = open('esginsight_L3_v1.json')
+        return json.load(f)
+    else:
+        f = open('dataBlocks-sample (4).json')
+        return json.load(f)
 
 @app.get("/mappings")
 async def mappings():
