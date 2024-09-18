@@ -58,7 +58,7 @@ async def mappings():
         {
             "Provider": "DnB",
             "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_advgeoposition_V1",
-            "Attribute_path": "oraganization.telephone[0].telephoneNumber",
+            "Attribute_path": "organization.telephone[0].telephoneNumber",
             "provider_Attribute": "address.PhoneNumber",
             "Data_type": "Number"
         },
