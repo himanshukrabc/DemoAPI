@@ -1,7 +1,23 @@
 from fastapi import FastAPI, Request,Query
 import json
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/")
+async def main():
+    return {"message": "Hello World"}
 
 @app.get("/v1/data/duns/{dunsNumber}")
 async def companyDetails(dunsNumber:str, blockIDs:str = Query(None)):
