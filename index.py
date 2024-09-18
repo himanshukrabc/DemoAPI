@@ -44,6 +44,20 @@ async def mappings():
         {
             "Provider": "DnB",
             "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
+            "Attribute_path": "organization.duns",
+            "provider_Attribute": "DUNSNumber",
+            "Data_type": "Number"
+        },
+        {
+            "Provider": "DnB",
+            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
+            "Attribute_path": "organization.primaryAddress.addressCountry.isoAlpha2Code",
+            "provider_Attribute": "TaxpayerCountryCode",
+            "Data_type": "Number"
+        },
+        {
+            "Provider": "DnB",
+            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
             "Attribute_path": "organization.registeredName",
             "provider_Attribute": "RegisteredName",
             "Data_type": "String"
