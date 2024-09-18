@@ -5,7 +5,9 @@ app = FastAPI()
 
 @app.get("/v1/data/duns/{dunsNumber}")
 async def companyDetails(dunsNumber:str, blockIDs:str = Query(None)):
-    if(blockIDs.find("esg")!=-1):
+    if (blockIDs==None):
+        return {"msg":"BlockIds missing"}
+    elif(blockIDs.find("esg")!=-1):
         f = open('esginsight_L3_v1.json')
         return json.load(f)
     else:
