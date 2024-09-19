@@ -9,7 +9,8 @@
 		"blockIDs": [
 			"companyfinancials_L4_v3",
 			"companyinfo_L4_v1",
-			"companyinfo_advgeoposition_v1"
+			"companyinfo_advgeoposition_v1",
+			"esginsight_L3_v1"
 		]
 	},
 	"organization": {
@@ -1579,7 +1580,191 @@
 			}
 		},
 		"investigationDate": "2022-08-31",
-		"tsrReportDate": "2021-10-12"
+		"tsrReportDate": "2021-10-12",
+		"esgIndustryCategories": [
+			{
+				"category": "Services",
+				"industry": "Leisure Facilities",
+				"priority": 1
+			}
+		],
+		"esgRanking": {
+			"scoreDate": "2020-01-31",
+			"score": 3,
+			"peerPercentileGroup": "51 to 70",
+			"averagePeerScore": 2.85,
+			"dataDepth": {
+				"indicator": "A"
+			}
+		},
+		"environmentalRanking": {
+			"score": 2,
+			"peerPercentileGroup": "51 to 70",
+			"averagePeerScore": 2.85,
+			"scoreReasons": [
+				{
+					"description": "Energy management - Elevated Risk score",
+					"dnbCode": 36532,
+					"priority": 1
+				}
+			],
+			"naturalResourcesScore": 2,
+			"naturalResourcesTopics": {
+				"energyManagementscore": 75,
+				"landUseBiodiversityScore": 65,
+				"materialsSourcingManagementScore": 68,
+				"pollutionPreventionManagementScore": 75,
+				"wasteHazardsManagementScore": 87,
+				"waterManagementScore": 98,
+				"emissionsClimateScore": 1
+			},
+			"emissionsClimateTopics": {
+				"climateRiskScore": 57,
+				"ghgEmissionsScore": 65
+			},
+			"riskScore": 3,
+			"riskTopics": {
+				"environmentalComplianceScore": 75
+			},
+			"opportunitiesScore": 3,
+			"opportunitiesTopics": {
+				"environmentalCertificationsScore": 78,
+				"environmentalOpportunitiesScore": 64
+			},
+			"dataDepth": {
+				"indicator": "A"
+			},
+			"ghgTier1SuppliersCount": 12,
+			"ghgEmissionScope1": {
+				"emissionVolume": 37890.45,
+				"reliability": {
+					"description": "Actual",
+					"dnbCode": 9092
+				},
+				"dataProvider": {
+					"description": "EEA EU Emissions Trading System (ETS)",
+					"dnbCode": 43332
+				}
+			},
+			"ghgEmissionScope2": {
+				"emissionVolume": 37890.45,
+				"reliability": {
+					"description": "Actual",
+					"dnbCode": 9092
+				},
+				"dataProvider": {
+					"description": "EEA EU Emissions Trading System (ETS)",
+					"dnbCode": 43332
+				},
+				"isBasedOnlyOnUtilityBills": true
+			},
+			"ghgEmissionScope3": {
+				"emissionVolume": 37890.45,
+				"reliability": {
+					"description": "Actual",
+					"dnbCode": 9092
+				},
+				"dataProvider": {
+					"description": "EEA EU Emissions Trading System (ETS)",
+					"dnbCode": 43332
+				},
+				"modelCategories": [
+					{
+						"categoryName": "Category 1: Purchased Goods & Services"
+					}
+				]
+			},
+			"emissionOffset": {
+				"offsetVolume": 245.34,
+				"emissionScopes": "Scope 1",
+				"reportingOrganization": {
+					"duns": "184488356",
+					"primaryName": "Yelp Inc."
+				}
+			},
+			"emissionNeutralPlan": {
+				"emissionNeutralYear": "2028",
+				"emissionNeutralScopes": "Scope 2",
+				"emissionNeutralType": "Direct"
+			}
+		},
+		"socialRanking": {
+			"score": 3,
+			"peerPercentileGroup": "31 to 50",
+			"averagePeerScore": 2.85,
+			"scoreReasons": [
+				{
+					"description": "Corporate philanthropy - Positive Score",
+					"dnbCode": 36519,
+					"priority": 1
+				}
+			],
+			"communityScore": 3,
+			"communityTopics": {
+				"communityEngagementScore": 78,
+				"corporatePhilanthropyScore": 65
+			},
+			"customersScore": 2,
+			"customerTopics": {
+				"productServiceScore": 88,
+				"dataPrivacyScore": 55
+			},
+			"humanCapitalScore": 3,
+			"humanCapitalTopics": {
+				"diversityInclusionScore": 65,
+				"healthSafetyScore": 78,
+				"humanRightsAbusesScore": 45,
+				"laborRelationsScore": 56,
+				"trainingEducationScore": 67
+			},
+			"productServiceScore": 2,
+			"productServiceTopics": {
+				"cyberRiskScore": 76,
+				"productQualityManagementScore": 78
+			},
+			"supplierScore": 2,
+			"supplierTopics": {
+				"supplierEngagementScore": 43
+			},
+			"certificationsScore": 2,
+			"certificationsTopics": {
+				"socialRelatedCertificationsScore": 34
+			},
+			"dataDepth": {
+				"indicator": "A"
+			}
+		},
+		"governanceRanking": {
+			"score": 3,
+			"peerPercentileGroup": "71 to 90",
+			"averagePeerScore": 2.85,
+			"scoreReasons": [
+				{
+					"description": "Governance related certifications - Elevated Risk Score",
+					"dnbCode": 37414,
+					"priority": 1
+				}
+			],
+			"businessResilienceScore": 3,
+			"businessResilienceTopics": {
+				"businessResilienceSustainabilityScore": 56
+			},
+			"corporateBehaviorScore": 2,
+			"corporateBehaviorTopics": {
+				"corporateComplianceBehaviorsScore": 67,
+				"governanceRelatedCertificationsScore": 78
+			},
+			"corporateGovernanceScore": 1,
+			"corporateGovernanceTopics": {
+				"boardAccountabilityScore": 87,
+				"businessEthicsScore": 65,
+				"businessTransparencyScore": 55,
+				"shareholderRightsScore": 67
+			},
+			"dataDepth": {
+				"indicator": "A"
+			}
+		}		
 	},
 	"blockStatus": [
 		{
@@ -1594,6 +1779,16 @@
 		},
 		{
 			"blockID": "companyinfo_advgeoposition_v1",
+			"status": "ok",
+			"reason": null
+		},
+		{
+			"blockID": "esginsight_L3_v1",
+			"status": "ok",
+			"reason": null
+		},
+		{
+			"blockID": "baseinfo_L1_v1",
 			"status": "ok",
 			"reason": null
 		}

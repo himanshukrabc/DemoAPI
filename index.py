@@ -23,9 +23,6 @@ async def main():
 async def companyDetails(dunsNumber:str, blockIDs:str = Query(None)):
     if (blockIDs==None):
         return {"msg":"BlockIds missing"}
-    elif(blockIDs.find("esg")!=-1):
-        f = open('esginsight_L3_v1.json')
-        return json.load(f)
     else:
         f = open('dataBlocks-sample (4).json')
         return json.load(f)
