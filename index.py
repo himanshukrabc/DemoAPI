@@ -14,6 +14,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.post("/token")
+async def main(req:Request):
+    headers = req.headers
+    print("Headers:", headers)
+
+    body = await req.body()
+    print("Body:", body.decode('utf-8'))  # Decoding from bytes to string
+
+    return {"message": "Hello World"}
 
 @app.get("/")
 async def main():
