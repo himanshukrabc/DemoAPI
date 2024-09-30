@@ -37,12 +37,14 @@ async def dataProviders():
         "primary_flag":"Y",
         "enabled_flag":"Y",
         "search_api_url":"autoSuggest",
-        "company_name_provider_attr":"organization.primaryName",
-        "provider_attribute1":"organization.duns",
-        "provider_attribute2":"organization.websiteAddress[0].url",
-        "provider_attribute3":"organization.telephone[0].telephoneNumber",
+        "company_name_provider_attr":"name",
+        "provider_attribute1":"icon_url",
+        "provider_attribute2":"url",
+        "provider_attribute3":"location",
         "provider_attribute4":None,
-        "provider_attribute5":None
+        "provider_attribute5":None,
+        "demo_identifier_path":"dunsNumber",
+        "demo_search_path":None
     }
 
 @app.get("/autoSuggest")
