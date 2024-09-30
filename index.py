@@ -36,7 +36,7 @@ async def dataProviders():
         "ext_data_provider_name":"Dun and Bradstreet",
         "primary_flag":"Y",
         "enabled_flag":"Y",
-        "search_api_url":"search",
+        "search_api_url":"autoSuggest",
         "company_name_provider_attr":"organization.primaryName",
         "provider_attribute1":"organization.duns",
         "provider_attribute2":"organization.websiteAddress[0].url",
