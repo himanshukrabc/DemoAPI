@@ -148,60 +148,76 @@ async def mappings():
     return {
         "mappings":[
         {
-            "Provider": "DnB",
-            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
-            "Attribute_path": "organization.primaryName",
-            "provider_Attribute": "Company",
-            "Data_type": "String"
+            "mapping_id":1,
+            "ext_data_provider_code": "DnB",
+            "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
+            "api_field_name": "organization.primaryName",
+            "internal_reg_attribute": "Company",
+            "supp_profile_attribute":"Y",
+            "data_type": "String"
         },
         {
-            "Provider": "DnB",
-            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
-            "Attribute_path": "organization.duns",
-            "provider_Attribute": "DUNSNumber",
-            "Data_type": "Number"
+            "mapping_id":1,
+            "ext_data_provider_code": "DnB",
+            "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
+            "api_field_name": "organization.duns",
+            "internal_reg_attribute": "DUNSNumber",
+            "supp_profile_attribute":"Y",
+            "data_type": "Number"
         },
         {
-            "Provider": "DnB",
-            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
-            "Attribute_path": "organization.primaryAddress.addressCountry.isoAlpha2Code",
-            "provider_Attribute": "TaxpayerCountryCode",
-            "Data_type": "Number"
+            "mapping_id":1,
+            "ext_data_provider_code": "DnB",
+            "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
+            "api_field_name": "organization.primaryAddress.addressCountry.isoAlpha2Code",
+            "internal_reg_attribute": "TaxpayerCountryCode",
+            "supp_profile_attribute":"Y",
+            "data_type": "Number"
         },
         {
-            "Provider": "DnB",
-            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
-            "Attribute_path": "organization.registeredName",
-            "provider_Attribute": "RegisteredName",
-            "Data_type": "String"
+            "mapping_id":1,
+            "ext_data_provider_code": "DnB",
+            "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
+            "api_field_name": "organization.registeredName",
+            "internal_reg_attribute": "RegisteredName",
+            "supp_profile_attribute":"Y",
+            "data_type": "String"
         },
         {
-            "Provider": "DnB",
-            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L4_V1",
-            "Attribute_path": "organization.websiteAddress[0].url",
-            "provider_Attribute": "CorporateWebsite",
-            "Data_type": "url"
+            "mapping_id":1,
+            "ext_data_provider_code": "DnB",
+            "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L4_V1",
+            "api_field_name": "organization.websiteAddress[0].url",
+            "internal_reg_attribute": "CorporateWebsite",
+            "supp_profile_attribute":"Y",
+            "data_type": "url"
         },
         {
-            "Provider": "DnB",
-            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_advgeoposition_V1",
-            "Attribute_path": "organization.telephone[0].telephoneNumber",
-            "provider_Attribute": "address.PhoneNumber",
-            "Data_type": "Number"
+            "mapping_id":1,
+            "ext_data_provider_code": "DnB",
+            "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_advgeoposition_V1",
+            "api_field_name": "organization.telephone[0].telephoneNumber",
+            "internal_reg_attribute": "address.PhoneNumber",
+            "supp_profile_attribute":"Y",
+            "data_type": "Number"
         },
         {
-            "Provider": "DnB",
-            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyfinancials_L4_V2",
-            "Attribute_path": "organization.otherFinancials[0].currency",
-            "provider_Attribute": "Currency",
-            "Data_type": "String"
+            "mapping_id":1,
+            "ext_data_provider_code": "DnB",
+            "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyfinancials_L4_V2",
+            "api_field_name": "organization.otherFinancials[0].currency",
+            "internal_reg_attribute": "Currency",
+            "supp_profile_attribute":"Y",
+            "data_type": "String"
         },
         {
-            "Provider": "DnB",
-            "API_URL": "v1/data/duns/{dunsNumber}?blockIDs=companyesgInsights_L4_V3",
-            "Attribute_path": "organization.esgRanking.score",
-            "provider_Attribute": "Score",
-            "Data_type": "Number"
+            "mapping_id":1,
+            "ext_data_provider_code": "DnB",
+            "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyesgInsights_L4_V3",
+            "api_field_name": "organization.esgRanking.score",
+            "internal_reg_attribute": "Score",
+            "supp_profile_attribute":"Y",
+            "data_type": "Number",
         }
     ]}
 
@@ -210,3 +226,5 @@ async def mappings():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
