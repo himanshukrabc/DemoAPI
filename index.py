@@ -43,8 +43,8 @@ async def dataProviders():
         "provider_attribute3":"location",
         "provider_attribute4":None,
         "provider_attribute5":None,
-        "demo_identifier_path":"dunsNumber",
-        "demo_search_path":None
+        "provider_identifier":"dunsNumber",
+        "search_candidates":None
     }
 
 @app.get("/autoSuggest")
