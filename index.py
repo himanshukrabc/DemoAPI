@@ -48,7 +48,7 @@ async def dataProviders():
     }
 
 
-const companies=[
+companies=[
     {
         "id": "5130efc38989846a360001f6",
         "object_type": "company",
@@ -132,8 +132,7 @@ const companies=[
 ]
 @app.get("/autoSuggest")
 async def autoSuggest(searchString:str = Query(None)):
-    return {"res":{"results":
-                   [val for val in companies if searchString in val['name']]}}
+    return {"res":{"results":[val for val in companies if searchString in val['name']]}}
 
 
 @app.get("/v1/data/duns/{dunsNumber}")
