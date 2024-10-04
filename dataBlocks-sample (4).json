@@ -652,7 +652,7 @@
 				},
 				"addressCountry": {
 					"name": "United States",
-					"isoAlpha2Code": "US"
+					"isoAlpha2Code": "BR"
 				},
 				"continentalRegion": {
 					"name": "North America"
@@ -6040,7 +6040,7 @@
 				},
 				"addressCountry": {
 					"name": "United States",
-					"isoAlpha2Code": "GB"
+					"isoAlpha2Code": "KR"
 				},
 				"continentalRegion": {
 					"name": "North America"
@@ -7836,7 +7836,7 @@
 				},
 				"addressCountry": {
 					"name": "United States",
-					"isoAlpha2Code": "US"
+					"isoAlpha2Code": "IS"
 				},
 				"continentalRegion": {
 					"name": "North America"
@@ -9632,7 +9632,7 @@
 				},
 				"addressCountry": {
 					"name": "United States",
-					"isoAlpha2Code": "AFG"
+					"isoAlpha2Code": "NZ"
 				},
 				"continentalRegion": {
 					"name": "North America"
@@ -11428,7 +11428,7 @@
 				},
 				"addressCountry": {
 					"name": "United States",
-					"isoAlpha2Code": "IND"
+					"isoAlpha2Code": "IN"
 				},
 				"continentalRegion": {
 					"name": "North America"
@@ -13224,7 +13224,7 @@
 				},
 				"addressCountry": {
 					"name": "United States",
-					"isoAlpha2Code": "US"
+					"isoAlpha2Code": "SE"
 				},
 				"continentalRegion": {
 					"name": "North America"
