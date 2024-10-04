@@ -44,12 +44,12 @@ async def dataProviders():
         "provider_attribute4":None,
         "provider_attribute5":None,
         "provider_identifier":"dunsNumber",
-        "search_candidates":None
+        "search_candidates":"res.results"
     }
 
 @app.get("/autoSuggest")
 async def autoSuggest():
-    return [
+    return {"res":{"results":[
     {
         "id": "5130efc38989846a360001f6",
         "object_type": "company",
@@ -127,7 +127,7 @@ async def autoSuggest():
         "location": "Reading, United Kingdom",
         "icon_url": "//axdprrulpfmh.compat.objectstorage.us-phoenix-1.oraclecloud.com/datafox-public-prod/favicons/58e22e3545930d2649ebd647.ico"
     }
-]
+]}}
 
 
 @app.get("/v1/data/duns/{dunsNumber}")
