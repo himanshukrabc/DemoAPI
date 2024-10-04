@@ -47,9 +47,8 @@ async def dataProviders():
         "search_candidates":"res.results"
     }
 
-@app.get("/autoSuggest")
-async def autoSuggest():
-    return {"res":{"results":[
+
+const companies=[
     {
         "id": "5130efc38989846a360001f6",
         "object_type": "company",
@@ -130,7 +129,11 @@ async def autoSuggest():
         "location": "Reading, United Kingdom",
         "icon_url": "//axdprrulpfmh.compat.objectstorage.us-phoenix-1.oraclecloud.com/datafox-public-prod/favicons/58e22e3545930d2649ebd647.ico"
     }
-]}}
+]
+@app.get("/autoSuggest")
+async def autoSuggest(searchString:str = Query(None)):
+    return {"res":{"results":
+                   [val for val in companies if searchString in val['name']]}}
 
 
 @app.get("/v1/data/duns/{dunsNumber}")
