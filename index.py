@@ -132,7 +132,7 @@ async def autoSuggest(searchString: str = Query(None)):
             "icon_url": "//axdprrulpfmh.compat.objectstorage.us-phoenix-1.oraclecloud.com/datafox-public-prod/favicons/58e22e3545930d2649ebd647.ico"
         }
     ]
-    # return {"res": {"results": companies}}
+    return {"res": {"results": companies}}
 
     if searchString:
         searchString = searchString.lower()  # Convert to lowercase for case-insensitive match
