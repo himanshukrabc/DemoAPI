@@ -49,12 +49,12 @@ async def dataProviders():
 
 
 @app.get("/autoSuggest")
-async def autoSuggest(searchString: str = Query(None)):
+async def autoSuggest(searchText: str = Query(None)):
     f = open('companies.json')
     companies=json.load(f)["comp"]
-    if searchString:
-        searchString = searchString.lower() 
-        res = [val for val in companies if searchString in val['name'].lower()]
+    if searchText:
+        searchText = searchText.lower() 
+        res = [val for val in companies if searchText in val['name'].lower()]
         return {"res": {"results": res}}
     else:
         return {"res": {"results": []}}
