@@ -43,7 +43,7 @@ async def dataProviders():
         "provider_attribute3":"location",
         "provider_attribute4":None,
         "provider_attribute5":None,
-        "provider_identifier":"dunsNumber",
+        "provider_identifier":"DUNSNumber",
         "search_candidates":"res.results"
     }
 
