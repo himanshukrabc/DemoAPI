@@ -55,9 +55,37 @@ async def autoSuggest(searchText: str = Query(None)):
     if searchText:
         searchText = searchText.lower() 
         res = [val for val in companies if searchText in val['organization']['primaryName'].lower()]
-        return {"res": {"results": res}}
+        return {
+            "transactionDetail": {
+                "transactionID": "rrt-051d25cbd8f15f5a9-b-ea-20648-54309783-3",
+                "transactionTimestamp": "2018-02-28T17:11:06.454Z",
+                "inLanguage": "en-US",
+                "serviceVersion": "1"
+            },
+            "inquiryDetail": {
+                "countryISOAlpha2Code": "US",
+                "searchTerm": "Gor"
+            },
+            "candidatesReturnedQuantity": 2,
+            "candidatesMatchedQuantity": 23,
+            "searchCandidates": res
+        }
     else:
-        return {"res": {"results": []}}
+        return {
+            "transactionDetail": {
+                "transactionID": "rrt-051d25cbd8f15f5a9-b-ea-20648-54309783-3",
+                "transactionTimestamp": "2018-02-28T17:11:06.454Z",
+                "inLanguage": "en-US",
+                "serviceVersion": "1"
+            },
+            "inquiryDetail": {
+                "countryISOAlpha2Code": "US",
+                "searchTerm": "Gor"
+            },
+            "candidatesReturnedQuantity": 2,
+            "candidatesMatchedQuantity": 23,
+            "searchCandidates": []
+        }
 
 @app.get("/v1/data/duns/{dunsNumber}")
 async def companyDetails(dunsNumber:str, blockIDs:str = Query(None)):
