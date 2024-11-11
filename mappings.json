@@ -5,7 +5,7 @@
         "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
         "api_field_name": "organization.primaryName",
-        "internal_reg_attribute": "Company",
+        "internal_reg_attribute": "RegistrationHeader.Company",
         "supp_profile_attribute":"Y",
         "data_type": "String"
     },
@@ -14,7 +14,7 @@
         "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
         "api_field_name": "organization.duns",
-        "internal_reg_attribute": "DUNSNumber",
+        "internal_reg_attribute": "RegistrationHeader.DUNSNumber",
         "supp_profile_attribute":"Y",
         "data_type": "Number"
     },
@@ -23,7 +23,7 @@
         "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
         "api_field_name": "organization.primaryAddress.addressCountry.isoAlpha2Code",
-        "internal_reg_attribute": "TaxpayerCountryCode",
+        "internal_reg_attribute": "RegistrationHeader.TaxpayerCountryCode",
         "supp_profile_attribute":"Y",
         "data_type": "Number"
     },
@@ -32,7 +32,7 @@
         "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
         "api_field_name": "organization.registeredName",
-        "internal_reg_attribute": "RegisteredName",
+        "internal_reg_attribute": "RegistrationHeader.RegisteredName",
         "supp_profile_attribute":"Y",
         "data_type": "String"
     },
@@ -41,7 +41,7 @@
         "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L4_V1",
         "api_field_name": "organization.websiteAddress[0].url",
-        "internal_reg_attribute": "CorporateWebsite",
+        "internal_reg_attribute": "RegistrationHeader.CorporateWebsite",
         "supp_profile_attribute":"Y",
         "data_type": "url"
     },
@@ -50,7 +50,7 @@
         "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_advgeoposition_V1",
         "api_field_name": "organization.telephone[0].telephoneNumber",
-        "internal_reg_attribute": "address.PhoneNumber",
+        "internal_reg_attribute": "RegistrationHeader.address.PhoneNumber",
         "supp_profile_attribute":"Y",
         "data_type": "Number"
     },
@@ -59,7 +59,7 @@
         "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyfinancials_L4_V2",
         "api_field_name": "organization.otherFinancials[0].currency",
-        "internal_reg_attribute": "Currency",
+        "internal_reg_attribute": "RegistrationHeader.Currency",
         "supp_profile_attribute":"Y",
         "data_type": "String"
     },
@@ -68,7 +68,25 @@
         "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyesgInsights_L4_V3",
         "api_field_name": "organization.esgRanking.score",
-        "internal_reg_attribute": "Score",
+        "internal_reg_attribute": "RegistrationHeader.Score",
+        "supp_profile_attribute":"Y",
+        "data_type": "Number"
+    },
+    {
+        "mapping_id":1,
+        "ext_data_provider_code": "DnB",
+        "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyesgInsights_L4_V3",
+        "api_field_name": "organization.otherFinancials[0].isAudited",
+        "internal_reg_attribute": "RegistrationHeaderDFFs.iso9001Certified",
+        "supp_profile_attribute":"Y",
+        "data_type": "Number"
+    },
+    {
+        "mapping_id":1,
+        "ext_data_provider_code": "DnB",
+        "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
+        "api_field_name": "organization.duns",
+        "internal_reg_attribute": "RegistrationHeaderDFFs.DUNSNumber",
         "supp_profile_attribute":"Y",
         "data_type": "Number"
     }

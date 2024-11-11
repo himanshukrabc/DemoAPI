@@ -92,7 +92,7 @@ async def companyDetails(dunsNumber:str, blockIDs:str = Query(None)):
     if (blockIDs==None):
         return {"msg":"BlockIds missing"}
     else:
-        f = open('dataBlocks-sample (4).json')
+        f = open('dataBlocks-sample.json')
         return json.load(f)[dunsNumber]
 
 
