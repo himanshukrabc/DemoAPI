@@ -75,15 +75,6 @@
     {
         "mapping_id":1,
         "ext_data_provider_code": "DnB",
-        "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyesgInsights_L4_V3",
-        "api_field_name": "organization.otherFinancials[0].isAudited",
-        "internal_reg_attribute": "RegistrationHeaderDFFs.iso9001Certified",
-        "supp_profile_attribute":"Y",
-        "data_type": "Number"
-    },
-    {
-        "mapping_id":1,
-        "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
         "api_field_name": "organization.duns",
         "internal_reg_attribute": "RegistrationHeaderDFFs._Supplier__Primary__Detail",
