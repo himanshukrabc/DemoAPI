@@ -31,6 +31,15 @@
         "mapping_id":1,
         "ext_data_provider_code": "DnB",
         "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
+        "api_field_name": "organization.registrationNumbers.[typeDescription=Federal Taxpayer Identification Number (US)].registrationNumber",
+        "internal_reg_attribute": "RegistrationHeader.TaxPayerId",
+        "supp_profile_attribute":"Y",
+        "data_type": "Number"
+    },
+    {
+        "mapping_id":1,
+        "ext_data_provider_code": "DnB",
+        "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
         "api_field_name": "organization.registeredName",
         "internal_reg_attribute": "RegistrationHeader.RegisteredName",
         "supp_profile_attribute":"Y",
