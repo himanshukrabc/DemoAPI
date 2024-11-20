@@ -1811,6 +1811,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "213489712",
 			"primaryName": "Dyn",
@@ -3607,6 +3608,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "239047824",
 			"primaryName": "Sedgwick",
@@ -5403,6 +5405,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "345987533",
 			"primaryName": "Oracle Lighting",
@@ -7199,6 +7202,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "354198734",
 			"primaryName": "CrowdTwist",
@@ -8995,6 +8999,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "135412344",
 			"primaryName": "Moat",
@@ -10791,6 +10796,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "234512342",
 			"primaryName": "Oracle Corporation UK Limited",
@@ -12587,6 +12593,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "123456789",
 			"primaryName": "TechX Solutions",
@@ -14383,6 +14390,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "987654321",
 			"primaryName": "InnovaTech",
@@ -16179,6 +16187,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "345987234",
 			"primaryName": "Delta Dynamics",
@@ -17975,6 +17984,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "129834762",
 			"primaryName": "BlueLight Innovations",
@@ -19771,6 +19781,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "231467892",
 			"primaryName": "Vortex Labs",
@@ -21567,6 +21578,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"No",
 			"countryISOAlpha2Code": "US",
 			"duns": "341876543",
 			"primaryName": "Neon Tech",
@@ -23363,6 +23375,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"No",
 			"countryISOAlpha2Code": "US",
 			"duns": "483920384",
 			"primaryName": "Fusion Analytics",
@@ -25159,6 +25172,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"No",
 			"countryISOAlpha2Code": "US",
 			"duns": "674839012",
 			"primaryName": "NextGen Tech",
@@ -26955,6 +26969,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"No",
 			"countryISOAlpha2Code": "US",
 			"duns": "574839104",
 			"primaryName": "Quantify Systems",
@@ -28751,6 +28766,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"No",
 			"countryISOAlpha2Code": "US",
 			"duns": "239847651",
 			"primaryName": "Nimbus Solutions",
@@ -30547,6 +30563,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"No",
 			"countryISOAlpha2Code": "US",
 			"duns": "564738291",
 			"primaryName": "AlphaTech Solutions",
@@ -32343,6 +32360,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"No",
 			"countryISOAlpha2Code": "US",
 			"duns": "657483920",
 			"primaryName": "SkyTech Innovations",
@@ -34139,6 +34157,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"No",
 			"countryISOAlpha2Code": "US",
 			"duns": "948372615",
 			"primaryName": "BetaTech Systems",
@@ -35935,6 +35954,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "124578930",
 			"primaryName": "OptimaTech Group",
@@ -37731,6 +37751,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "283756194",
 			"primaryName": "PrimeTech Labs",
@@ -39527,6 +39548,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "847592034",
 			"primaryName": "MetroTech Solutions",
@@ -41323,6 +41345,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "394857612",
 			"primaryName": "InstaTech Solutions",
@@ -43119,6 +43142,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "958473012",
 			"primaryName": "NovaTech Enterprises",
@@ -44915,6 +44939,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "392875641",
 			"primaryName": "PentaTech Industries",
@@ -46711,6 +46736,7 @@
 			]
 		},
 		"organization": {
+			"isoCertified":"Yes",
 			"countryISOAlpha2Code": "US",
 			"duns": "582930174",
 			"primaryName": "QuantumTech Systems",
