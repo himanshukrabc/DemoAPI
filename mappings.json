@@ -107,32 +107,5 @@
         "internal_reg_attribute": "RegistrationHeaderDFFs.salesVolume",
         "supp_profile_attribute":"Y",
         "data_type": "Number"
-    },
-    {
-        "mapping_id":1,
-        "ext_data_provider_code": "DnB",
-        "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
-        "api_field_name": "organization.isoCertified",
-        "internal_reg_attribute": "RegistrationHeaderDFFs.__FLEX_Context",
-        "supp_profile_attribute":"Y",
-        "data_type": "Number"
-    },
-    {
-        "mapping_id":1,
-        "ext_data_provider_code": "DnB",
-        "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
-        "api_field_name": "organization.primaryName",
-        "internal_reg_attribute": "RegistrationHeaderDFFs.certificateNumber",
-        "supp_profile_attribute":"Y",
-        "data_type": "Number"
-    },
-    {
-        "mapping_id":1,
-        "ext_data_provider_code": "DnB",
-        "api_url": "v1/data/duns/{dunsNumber}?blockIDs=companyInfo_L1_V1",
-        "api_field_name": "organization.primaryName",
-        "internal_reg_attribute": "RegistrationHeaderDFFs.certifyingAgency",
-        "supp_profile_attribute":"Y",
-        "data_type": "Number"
     }
 ]}
