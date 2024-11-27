@@ -1,5 +1,4 @@
-{
-    "mappings":[
+[
     {
         "mapping_id":1,
         "ext_data_provider_code": "DnB",
@@ -108,4 +107,4 @@
         "supp_profile_attribute":"Y",
         "data_type": "Number"
     }
-]}
+]
