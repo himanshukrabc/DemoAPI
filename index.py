@@ -26,7 +26,7 @@ async def main(req:Request):
 
 @app.get("/EVData")
 async def main(integration_id: str = Query(..., description="Integration ID")):
-    if(integration_id=="Avian"):
+    if(integration_id=="\"Avian\""):
         return [
             {
                 "integration_ids": [
@@ -134,7 +134,7 @@ async def main(integration_id: str = Query(..., description="Integration ID")):
                 "target_scorecard_link": None
             }
         ]
-    elif(integration_id == "Dell"):
+    elif(integration_id =="\"Dell\""):
         return [
             {
                 "integration_ids": [
