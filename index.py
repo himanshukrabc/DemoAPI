@@ -451,7 +451,7 @@ async def getSupp(dunsNumber : str):
         "Company": "Oracle Corporation",
         "DUNS": "144709193",
         "Website": "https://www.oracle.com/",
-        "Country": "United States",
+        "Country": "US",
         "TaxpayerID": "542-185-193",
         "PrimaryIndustryCode": 7372,
         "NumberOfEmployees": 159000,
