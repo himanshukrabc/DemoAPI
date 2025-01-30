@@ -447,18 +447,13 @@ async def getSearchRes(searchText: str):
 
 @app.get("/supplier/{dunsNumber}")
 async def getSupp(dunsNumber : str):
-    return {
-        "Company": "Oracle Corporation",
-        "DUNS": "144709193",
-        "Website": "https://www.oracle.com/",
-        "Country": "US",
-        "TaxpayerID": "542-185-193",
-        "PrimaryIndustryCode": 7372,
-        "NumberOfEmployees": 159000,
-        "RiskScore": "2",
-        "ComplianceScore": "2",
-        "OnGovtSanctionList": "No"
-    }
+    obj = {"13044532":{"Company":"Oracle America, Inc.","DUNS":"13044532","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"631-602-703","PrimaryIndustryCode":174,"NumberOfEmployees":46800,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"},"144709193":{"Company":"Oracle Corporation","DUNS":"144709193","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"315-116-367","PrimaryIndustryCode":8781,"NumberOfEmployees":14900,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"},"238480123":{"Company":"ORACLE EMEA LIMITED","DUNS":"238480123","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"23-657-805","PrimaryIndustryCode":342,"NumberOfEmployees":98300,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"},"291601524":{"Company":"ORACLE CORPORATION UK LIMITED","DUNS":"291601524","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"265-990-656","PrimaryIndustryCode":7454,"NumberOfEmployees":80100,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"},"356990528":{"Company":"ORACLE SYSTEMS LIMITED","DUNS":"356990528","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"312-809-222","PrimaryIndustryCode":9433,"NumberOfEmployees":4000,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"},"391129939":{"Company":"ORACLE FRANCE","DUNS":"391129939","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"971-787-824","PrimaryIndustryCode":1944,"NumberOfEmployees":91600,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"},"692770886":{"Company":"ORACLE CORPORATION JAPAN","DUNS":"692770886","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"537-57-985","PrimaryIndustryCode":5600,"NumberOfEmployees":11700,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"},"753586882":{"Company":"ORACLE CONSOLIDATION ALSTRALIA DTV ITO","DUNS":"753586882","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"210-179-85","PrimaryIndustryCode":5221,"NumberOfEmployees":57800,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"},"862165896":{"Company":"ORACLE INDIA PRIVATE LIMITED","DUNS":"862165896","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"348-807-151","PrimaryIndustryCode":318,"NumberOfEmployees":19700,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"},
+           "896728230":{"Company":"ORACLE CAPAC SERVICES UNLIMITED COMPANY","DUNS":"896728230","Website":"https://www.oracle.com/","Country":"US","TaxpayerID":"661-135-870","PrimaryIndustryCode":5402,"NumberOfEmployees":24300,"RiskScore":"2","ComplianceScore":"2","OnGovtSanctionList":"No"}}
+    print(obj.keys())
+    if dunsNumber in obj.keys():
+        return obj[dunsNumber]
+    else:
+        return obj["13044532"]
 
 @app.get("/mappings")
 async def mappings():
