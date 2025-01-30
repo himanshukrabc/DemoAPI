@@ -425,6 +425,40 @@ async def companyDetails(dunsNumber:str, blockIDs:str = Query(None)):
         f = open('dataBlocks-sample.json')
         return json.load(f)[dunsNumber]
 
+@app.get("/search={searchText}")
+async def getSearchRes(searchText: str):
+    res = [
+        {"companyName": "Oracle Corporation", "address": "2300 Oracle Way Austin, TX, 78741-1400 United States", "website": "https://www.oracle.com/", "dunsNumber": "144709193"},
+        {"companyName": "ORACLE EMEA LIMITED", "address": "EAST POINT BUSINESS PARK FAIRVIEW DUBLIN, 3 Ireland", "website": "https://www.oracle.com/", "dunsNumber": "238480123"},
+        {"companyName": "ORACLE SYSTEMS LIMITED", "address": "Floor 2, 58 Akropoleos Strovolos, 2012 Cyprus", "website": "http://www.oracle.com/", "dunsNumber": "356990528"},
+        {"companyName": "ORACLE CAPAC SERVICES UNLIMITED COMPANY", "address": "EASTPOINT BUSINESS PARK FAIRVIEW DUBLIN 3, DO3 E8N6 Ireland", "website": "http://www.oracle.com/", "dunsNumber": "896728230"},
+        {"companyName": "Oracle America, Inc.", "address": "500 Oracle Pkwy Redwood City, CA, 94065-1677 United States", "website": "http://www.oracle.com/", "dunsNumber": "13044532"},
+        {"companyName": "ORACLE INDIA PRIVATE LIMITED", "address": "One Horizon Center, Levels 7, 8 and 9, DLF City V, Sector 43, Gurugram, Haryana, 122003 India", "website": "http://www.oracle.com/", "dunsNumber": "862165896"},
+        {"companyName": "ORACLE CORPORATION UK LIMITED", "address": "ORACLE PARKWAY, THAMES VALLEY PARK (TVP) READING, RG6 1RA United Kingdom", "website": "http://www.oracle.com/", "dunsNumber": "291601524"},
+        {"companyName": "ORACLE CORPORATION JAPAN", "address": "2-5-8, KITAAOYAMA ORAKURUAOYAMASENTA- MINATO-KU, TOKYO, 107-0061 Japan", "website": "http://www.oracle.com/jp/", "dunsNumber": "692770886"},
+        {"companyName": "ORACLE CONSOLIDATION ALSTRALIA DTV ITO", "address": "4 Julius Ave North Ryde, NEW SOUTH WALES, 2113 Australia", "website": "http://www.oracle.com/", "dunsNumber": "753586882"},
+        {"companyName": "ORACLE FRANCE", "address": "15 BD CHARLES DE GAULLE 92715, COLOMBES CEDEX, ILE DE FRANCE France", "website": "http://www.oracle.com/", "dunsNumber": "391129939"},
+    ]
+    
+    result = [c for c in res if searchText.lower() in c['companyName'].lower()]
+    
+    print(result)
+    return result
+
+@app.get("/supplier/{dunsNumber}")
+async def getSupp(dunsNumber : str):
+    return {
+        "Company": "Oracle Corporation",
+        "DUNS": "144709193",
+        "Website": "https://www.oracle.com/",
+        "Country": "United States",
+        "TaxpayerID": "542-185-193",
+        "PrimaryIndustryCode": 7372,
+        "NumberOfEmployees": 159000,
+        "RiskScore": "2",
+        "ComplianceScore": "2",
+        "OnGovtSanctionList": "No"
+    }
 
 @app.get("/mappings")
 async def mappings():
@@ -435,4 +469,3 @@ async def mappings():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
