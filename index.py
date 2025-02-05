@@ -432,7 +432,7 @@ async def getSearchRes(searchText: str):
         {"logo":"https://logotyp.us/file/oracle.svg","companyName": "ORACLE EMEA LIMITED", "address": "EAST POINT BUSINESS PARK FAIRVIEW DUBLIN, 3 Ireland", "website": "https://www.oracle.com/", "dunsNumber": "238480123"},
         {"logo":"https://logotyp.us/file/oracle.svg","companyName": "ORACLE SYSTEMS LIMITED", "address": "Floor 2, 58 Akropoleos Strovolos, 2012 Cyprus", "website": "http://www.oracle.com/", "dunsNumber": "356990528"},
         {"logo":"https://logotyp.us/file/oracle.svg","companyName": "ORACLE CAPAC SERVICES UNLIMITED COMPANY", "address": "EASTPOINT BUSINESS PARK FAIRVIEW DUBLIN 3, DO3 E8N6 Ireland", "website": "http://www.oracle.com/", "dunsNumber": "896728230"},
-        {"logo":"https://logotyp.us/file/oracle.svg","companyName": "Oracle America, Inc.", "address": "500 Oracle Pkwy Redwood City, CA, 94065-1677 United States", "website": "http://www.oracle.com/", "dunsNumber": "13044532"},
+        {"logo":"https://logotyp.us/file/oracle.svg","companyName": "Oracle America, Inc.", "address": "500 Oracle Pkwy Redwood City, CA, 94065-1677 United States", "website": "http://www.oracle.com/", "dunsNumber": "130445328"},
         {"logo":"https://logotyp.us/file/oracle.svg","companyName": "ORACLE INDIA PRIVATE LIMITED", "address": "One Horizon Center, Levels 7, 8 and 9, DLF City V, Sector 43, Gurugram, Haryana, 122003 India", "website": "http://www.oracle.com/", "dunsNumber": "862165896"},
         {"logo":"https://logotyp.us/file/oracle.svg","companyName": "ORACLE CORPORATION UK LIMITED", "address": "ORACLE PARKWAY, THAMES VALLEY PARK (TVP) READING, RG6 1RA United Kingdom", "website": "http://www.oracle.com/", "dunsNumber": "291601524"},
         {"logo":"https://logotyp.us/file/oracle.svg","companyName": "ORACLE CORPORATION JAPAN", "address": "2-5-8, KITAAOYAMA ORAKURUAOYAMASENTA- MINATO-KU, TOKYO, 107-0061 Japan", "website": "http://www.oracle.com/jp/", "dunsNumber": "692770886"},
@@ -573,7 +573,7 @@ async def getSupp(dunsNumber : str):
     if dunsNumber in obj.keys():
         return obj[dunsNumber]
     else:
-        return obj["13044532"]
+        return obj["130445328"]
 
 @app.get("/mappings")
 async def mappings():
